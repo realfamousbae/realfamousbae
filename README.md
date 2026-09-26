@@ -76,11 +76,11 @@ Private countdown timers that sync across devices. Timers are scoped to the sign
 
 ### [Limita](https://github.com/realfamousbae/limita)
 
-A native macOS menu-bar app that shows Claude Code and Codex rate limits at a glance. A hover pill slides in at the top edge of any screen, away from the notch. Each service is polled live on its own schedule, and the dashboard marks stale data and shows readable errors. It reads credentials from the Keychain without ever refreshing or modifying them.
+A native menu-bar and tray app for macOS and Windows that shows Claude Code and Codex rate limits at a glance. A hover pill slides in at the top edge of any screen, and the dashboard shows 5-hour and weekly limits, countdowns to each reset, balances, and the reason whenever a live update fails. The macOS app is written in Swift. Version 0.3 adds a Windows port built with Tauri and Rust. Limita reads credentials but never stores or refreshes them.
 
-`Swift` · `SwiftUI` · `Keychain`
+`Swift` · `SwiftUI` · `Rust` · `Tauri` · `TypeScript`
 
-→ [Download DMG](https://github.com/realfamousbae/limita/releases)
+→ [Download for macOS or Windows](https://github.com/realfamousbae/limita/releases)
 
 ### [Developer Profile API](https://github.com/realfamousbae/developer-profile-api)
 
