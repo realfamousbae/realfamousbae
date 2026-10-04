@@ -15,7 +15,7 @@ English · [Русский](README.ru.md)
 
 ## About
 
-I build products end to end: typed APIs and data layers, cross-platform desktop apps, mobile clients, and the web frontends that tie them together. I care about predictable architecture, reproducible setups, and honest documentation. Each project below can be cloned and run as its README describes.
+I build products end to end: typed APIs and data layers, cross-platform desktop apps, mobile clients, and the web frontends that tie them together. I care about predictable architecture, reproducible setups, and honest documentation. Each project below is public, and its README describes how to run it.
 
 ## Tech stack
 
@@ -66,13 +66,13 @@ I build products end to end: typed APIs and data layers, cross-platform desktop 
 
 ## Featured projects
 
-### [realfamousbae focus](https://github.com/realfamousbae/realfamousbae-focus)
+### [Veil](https://github.com/realfamousbae/Veil)
 
-Private countdown timers that sync across devices. Timers are scoped to the signed-in user and stored in Cloudflare D1. The app imports `.ics`/`.ical` and Google Calendar `.csv` files and handles recurring events, exclusions, duplicates, and time zones. The interface is available in English and Russian.
+A private world map on OpenStreetMap with no accounts, cookies, or analytics. It is a static site with no backend: vector maps, place search, offline regions, saved places that stay on the device, and an installable PWA with light, dark, and paper themes. The privacy rules are written down as a contract and checked by an automated test in CI on every change.
 
-`Next.js 16` · `React 19` · `TypeScript` · `Cloudflare Workers & D1` · `Drizzle ORM` · `Vite`
+`Svelte` · `MapLibre` · `PMTiles` · `TypeScript` · `PWA`
 
-→ [Live website](https://focus.realfam0usbae.chatgpt.site)
+→ [Open the map](https://veil-239.pages.dev)
 
 ### [Limita](https://github.com/realfamousbae/limita)
 
@@ -82,25 +82,33 @@ A native menu-bar and tray app for macOS and Windows that shows Claude Code and 
 
 → [Download for macOS or Windows](https://github.com/realfamousbae/limita/releases)
 
-### [Developer Profile API](https://github.com/realfamousbae/developer-profile-api)
+### [realfamousbae focus](https://github.com/realfamousbae/realfamousbae-focus)
 
-A production-style, read-only GraphQL service built with NestJS. Prisma owns the persistence layer over CockroachDB. A single `docker compose up` starts the database, waits for it to be healthy, applies migrations, runs an idempotent seed, and then starts the API.
+Private countdown timers that sync across devices. Timers are scoped to the signed-in user and stored in Cloudflare D1. The app imports `.ics`/`.ical` and Google Calendar `.csv` files and handles recurring events, exclusions, duplicates, and time zones. The interface is available in English and Russian.
 
-`NestJS` · `GraphQL (Apollo)` · `Prisma` · `CockroachDB` · `Docker`
+`Next.js 16` · `React 19` · `TypeScript` · `Cloudflare Workers & D1` · `Drizzle ORM` · `Vite`
 
-### [My Staff](https://github.com/realfamousbae/my-staff)
+→ [Live website](https://focus.realfam0usbae.chatgpt.site)
 
-A local-first Android app for collectors that turns photos of physical items into personal collectible cards. The original photos and SQLite data stay on the device. Sync goes through an account on your own NestJS + PostgreSQL backend, and backups export as portable ZIP archives. The data model keeps personal items separate from catalog editions.
+### [Staya](https://github.com/realfamousbae/Staya)
 
-`React Native` · `Expo` · `TypeScript` · `SQLite` · `NestJS` · `PostgreSQL`
+An open-source iOS and Android app for sharing location with a small circle of friends. Coordinates are end-to-end encrypted on the device with Olm/Megolm, and the server stores only the ciphertext of the latest packet. There is no phone number, no email, and no movement history. Early development: not usable yet.
 
-→ [Try the APK](https://github.com/realfamousbae/my-staff/releases)
+`Rust` · `Swift` · `SwiftUI` · `Kotlin` · `PostgreSQL`
 
-### [Hubble](https://github.com/realfamousbae/hubble)
+### [Data Expedition](https://github.com/realfamousbae/data-expedition)
 
-A cross-platform workspace that runs web services (Telegram, YouTube, Discord, music, AI tools) as native tiles in one window. Version 1.0 is a full rewrite from Electron to Tauri 2 that uses the system webview instead of a bundled Chromium. It features BSP auto-tiling, isolated persistent sessions for each service, and media controls. Remote pages get no native IPC access.
+A Claude Code plugin and skill for deep investigation. It makes Claude work like a careful investigator instead of a fast summarizer: it analyzes repositories, researches the web across primary sources, and verifies claims before writing an evidence-backed report. It targets Claude Opus and Fable class models.
 
-`Tauri 2` · `Rust` · `TypeScript` · `React`
+`Claude Code plugin` · `Python` · `Markdown`
+
+### [RFB Jukebox](https://github.com/realfamousbae/drg-rfb-jukebox-music)
+
+A Deep Rock Galactic mod that replaces all Space Rig jukebox songs with 39 custom tracks. It ships audio assets only, runs client-side, and fits every track to the exact duration the game allots to its slot.
+
+`Python` · `PowerShell` · `Unreal Engine 4.27`
+
+→ [Releases](https://github.com/realfamousbae/drg-rfb-jukebox-music/releases)
 
 ## GitHub activity
 
