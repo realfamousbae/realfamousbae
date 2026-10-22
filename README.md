@@ -16,6 +16,22 @@ Moscow · UTC+3
 
 I design and ship products end to end: typed APIs and data layers, web frontends, native desktop and mobile clients, and the infrastructure that runs them. I work with predictable architecture, reproducible environments and documentation that matches the code. Every project below is public, and each README describes how to build and run it.
 
+## Technology
+
+<table>
+<thead>
+<tr><th width="240" align="left">Area</th><th width="2000" align="left">Tools</th></tr>
+</thead>
+<tbody>
+<tr><td>Languages</td><td>TypeScript, Rust, Swift, Kotlin, Go, Python, Shell</td></tr>
+<tr><td>Backend and data</td><td>Node.js, NestJS, GraphQL, PostgreSQL, Drizzle ORM, Prisma</td></tr>
+<tr><td>Web</td><td>React, Next.js, Svelte, Vite, PWA</td></tr>
+<tr><td>Desktop and mobile</td><td>SwiftUI, Tauri, Jetpack Compose</td></tr>
+<tr><td>Infrastructure</td><td>Docker, GitHub Actions, Cloudflare Pages, Railway</td></tr>
+<tr><td>AI tooling</td><td>Claude Code, Codex: plugins, skills, hooks</td></tr>
+</tbody>
+</table>
+
 ## Projects
 
 | Project | Description | Stack |
@@ -27,14 +43,3 @@ I design and ship products end to end: typed APIs and data layers, web frontends
 | **[Staya](https://github.com/realfamousbae/Staya)** | End-to-end encrypted location sharing for a small circle of friends; the server stores ciphertext only. Early development. | Rust, Swift, Kotlin, PostgreSQL |
 | **[Data Expedition](https://github.com/realfamousbae/data-expedition)** | Agent Skills skill for Claude Code and Codex: deep repository analysis and web research with an evidence-backed report. | Python |
 | **[agent-context-kit](https://github.com/realfamousbae/agent-context-kit)** | Shared project memory for AI coding agents and their teams, kept in git with no servers. | Shell, PowerShell |
-
-## Technology
-
-| Area | Tools |
-| --- | --- |
-| Languages | TypeScript, Rust, Swift, Kotlin, Go, Python, Shell |
-| Backend and data | Node.js, NestJS, GraphQL, PostgreSQL, Drizzle ORM, Prisma |
-| Web | React, Next.js, Svelte, Vite, PWA |
-| Desktop and mobile | SwiftUI, Tauri, Jetpack Compose |
-| Infrastructure | Docker, GitHub Actions, Cloudflare Pages, Railway |
-| AI tooling | Claude Code, Codex: plugins, skills, hooks |
